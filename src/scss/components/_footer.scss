@@ -1,0 +1,60 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #000;
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      row-gap: 8px;
+    }
+  }
+
+  &__logo {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      row-gap: 8px;
+    }
+  }
+
+  &__tel,
+  &__mail {
+    a {
+      color: #fff;
+    }
+  }
+
+  &__top-line {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+  }
+}

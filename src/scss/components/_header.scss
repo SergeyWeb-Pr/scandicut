@@ -1,0 +1,60 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      row-gap: 8px;
+    }
+  }
+
+  &__logo {
+    width: 158px;
+    height: auto;
+    flex-shrink: 0;
+
+    @media screen and (max-width: 768px) {
+      width: 120px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+
+    @media screen and (max-width: 768px) {
+      column-gap: 16px;
+      flex-wrap: wrap;
+      row-gap: 8px;
+    }
+  }
+
+  &__tel {
+    a {
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+
+  &__mail {
+    a {
+      color: #fff;
+    }
+  }
+
+  &__mail {
+    color: #fff;
+  }
+}
