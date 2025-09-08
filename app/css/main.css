@@ -532,6 +532,9 @@ a {
     margin-bottom: 16px;
   }
 }
+.block-company__item {
+  display: inline-block;
+}
 .block-company__item:not(:last-child) {
   margin-bottom: 24px;
 }

@@ -90,6 +90,8 @@
   }
 
   &__item {
+    display: inline-block;
+    
     &:not(:last-child) {
       margin-bottom: 24px;
 
